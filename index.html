@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Riccardo Donati</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="typed.js"></script>
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- HAMBURGER MENU -->
+      <div id="menu-bar">
+  			<div id="menu" onclick="onClickMenu()">
+  				<div id="bar1" class="bar"></div>
+  				<div id="bar2" class="bar"></div>
+  				<div id="bar3" class="bar"></div>
+  			</div>
+  			<ul class="nav" id="nav">
+  				<li><a href="#about">About Me</a></li>
+  				<li><a href="#skill">Skill</a></li>
+  				<li><a href="#experience">Experience</a></li>
+  				<li><a href="#contact">Contact Me</a></li>
+  			</ul>
+  		</div>
+  		<div class="menu-bg" id="menu-bg"></div>
+  		<script src="script.js"></script>
+    </nav>
+
+
+    <!-- HEADER -->
+    <header class="header image-header"  >
+      <div class="info">
+        <h1 class="info-name">RICCARDO DONATI</h1>
+        <!-- <h3 class="info-work">Developer</h3> -->
+        <h3><span class="type info-work"></span></h3>
+        <script>
+
+        var typed = new Typed('.type', {
+          strings: ['Developer', 'Tech Addicted', 'Dreamer'],
+          typeSpeed: 60,
+          backSpeed: 60,
+          loop: true,
+        });
+        </script>
+      </div>
+    </header>
+
+    <!-- ABOUT ME -->
+    <div id="about" class="about-me">
+      <span><h1>ABOUT ME</h1></span>
+      <div class="profile">
+        <div class="profile-description">
+          <p>My name is Riccardo, I am 20 years old and my passions
+             are <b>TECHNOLOGY</b> and <b>BASKETBALL</b>. I am studying to become a
+             <b>DEVELOPER</b> and I have just started a new adventure on
+             <a href="https://www.start2impact.it/" target="_blank">start2impact</a>
+             in order to be able to improve myself in the digital world.</p>
+        </div>
+        <div class="profile-image">
+          <img src="images/RikyImage02.jpg" alt="RiccardoDonati" height="180" width="320">
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div id="skill" class="skill">
+      <span><h1>SKILL</h1></span>
+
+        <div class="skill-container">
+          <!-- 1^ SKILL -->
+          <div class="clearfix">
+            <div class="skill-info">
+              <div class="skill-bar-title">GO</div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar" per="80%">
+              <div class="skillbar-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+          <!-- 2^ SKILL -->
+          <div class="clearfix">
+            <div class="skill-info">
+              <div class="skill-bar-title">C</div>
+              <div class="skill-bar-percent">50%</div>
+            </div>
+            <div class="skillbar" per="50%">
+              <div class="skillbar-bar" style="width: 50%;"></div>
+            </div>
+          </div>
+          <!-- 3^ SKILL -->
+          <div class="clearfix">
+            <div class="skill-info">
+              <div class="skill-bar-title">HTML</div>
+              <div class="skill-bar-percent">75%</div>
+            </div>
+            <div class="skillbar" per="75%">
+              <div class="skillbar-bar" style="width: 75%;"></div>
+            </div>
+          </div>
+          <!-- 4^ SKILL -->
+          <div class="clearfix">
+            <div class="skill-info">
+              <div class="skill-bar-title">CSS</div>
+              <div class="skill-bar-percent">65%</div>
+            </div>
+            <div class="skillbar" per="65%">
+              <div class="skillbar-bar" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div id="experience" class="experience">
+      <span><h1>EXPERIENCE</h1></span>
+      <div class="experience-list">
+        <div class="row-experience">
+          <h4>Hardware Upgrade - News Editor</h4>
+          <h5>October 2018 - December 2019</h5>
+          <p>I worked with <b>Hardware Upgrade</b>, one of the most important
+            technology sites in the Italian scene, as a <b>news editor</b> and
+            <a href="https://www.instagram.com/hwupgrade/">Instagram</a>
+            account manager. I also had the chance to write some <b>reviews</b>:
+            <ul>
+              <li> <a href="https://www.hwupgrade.it/articoli/telefonia/5454/samsung-dex-lo-smartphone-diventa-pc-buona-alternativa-ma-non-per-tutti_index.html" target="_blank">Samsung Dex</a> </li>
+              <li> <a href="https://www.hwupgrade.it/articoli/telefonia/5486/oneplus-7-la-recensione-e-lui-lo-smartphone-da-acquistare_index.html" target="_blank">OnePlus 7</a> </li>
+              <li> <a href="https://gaming.hwupgrade.it/news/videogames/nba-2k20-piu-reale-ma-con-gli-stessi-bug-la-recensione_85716.html" target="_blank">NBA 2K20</a> </li>
+              <li> <a href="https://gaming.hwupgrade.it/news/videogames/pokemon-spada-una-nuova-avventura-nella-regione-di-galar_86468.html" target="_blank">Pokémon Spada e Scudo </a> </li>
+            </ul>
+          </p>
+        </div>
+        <div class="image-experience">
+          <img src="images/HWUpgrade.png" alt="HWUpgrade" height="100" width="100">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CONTACT US -->
+    <div id="contact" class="contact">
+      <span><h1>CONTACT ME</h1></span>
+      <form action='' method='get' class='speaker-form'>
+        <div class="contact-two-row">
+          <!-- NAME  -->
+          <div class='form-row row-long'>
+            <label for='full-name'>Name</label>
+            <input id='full-name' name='full-name' type='text' placeholder="Mario Rossi"/>
+          </div>
+
+          <!-- E-MAIL  -->
+          <div class="form-row row-long">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="joe@example.com" >
+          </div>
+        </div>
+
+        <!-- TEXTAREA -->
+        <div class='form-row'>
+          <label for='abstract'>Abstract</label>
+          <textarea id='abstract' name='abstract'placeholder="Say HELLO!"></textarea>
+        </div>
+
+        <!-- SUBMIT BUTTONS -->
+        <div class='form-row button'>
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- COPY -->
+        <div class="copyright">&copy; 2020 / Riccardo Donati</div>
+        <!-- SOCIAL -->
+        <div class="social">
+          <a href="https://www.instagram.com/rdonati.it/" class="instagram" target="_blank"><img src="images/instagram.svg" alt="instagram" class="social-icon" height="25px" width="25px"> </a>
+          <a href="https://www.facebook.com/riccardo.donati.184/" class="facebook" target="_blank"><img src="images/facebook.svg" alt="facebook" height="25px" width="25px" > </a>
+          <a href="https://twitter.com/Riky1616" class="twitter" target="_blank"><img src="images/twitter.svg" alt="twitter" height="25px" width="25px" > </a>
+          <a href="https://github.com/Riky16" class="github" target="_blank"><img src="images/github.svg" alt="github" height="25px" width="25px"> </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,496 @@
+/* COLORS:
+
+BLACK:      #252422
+GREY:       #BFC0C0
+            #5e5e5e  - For description
+ORANGE:     #EB5E28
+
+ */
+
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/Rubik-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* This will only work in Firefox */
+em, strong, b {
+  font-synthesis: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #BFC0C0;
+}
+
+a{
+	color: #EB5E28;
+	text-decoration: none;
+}
+a:hover{
+	font-weight: bold;
+}
+
+
+/* ---------------- NAVBAR ---------------- */
+
+.navbar{
+  background-color: #252422;
+  height: 80px;
+}
+
+
+
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 40px 40px;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #BFC0C0;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #BFC0C0;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 7px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 40px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#252422,#252422);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;
+}
+
+.change .bar{
+	background-color: #BFC0C0;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+.header{
+  height: 700px;
+  background-color: #252422;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-header{
+  background-image: url("images/profilepickDark.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.info {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: #BFC0C0;
+
+}
+
+.info-work{
+  margin-top: 30px;
+}
+
+/* ---------------- ABOUT ME ---------------- */
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+
+.about-me h1 {
+  background-color: #252422;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-description{
+  color: #5e5e5e;
+}
+
+
+/* ---------------- SKILL ---------------- */
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+
+.skill h1 {
+  background-color: #252422;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.clearfix{
+  margin-top: 10px;
+}
+
+.skill-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #5e5e5e;
+}
+
+.skillbar {
+  height: 15px;
+  background: #fff;
+  border-radius: 8px;
+  border: 2px solid #5e5e5e;
+  animation-duration: .7s;
+}
+
+.skillbar-bar {
+  height: 8px;
+  background: #252422;
+  border-radius: 8px;
+  margin: 2px 2px;
+
+}
+
+/* ----------------  EXPERIENCE ---------------- */
+
+.experience{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+
+.experience h1 {
+  background-color: #252422;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.experience-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-experience{
+  color: #5e5e5e;
+  margin-top: 10px;
+}
+
+.experience h5 {
+  background-color: #252422;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 12px;
+  color: #BFC0C0;
+}
+
+.row-experience ul {
+  list-style: none;
+}
+
+
+/* ---------------- CONTACT US ---------------- */
+.contact{
+  height: auto;
+  background-color: #252422;
+  color: #BFC0C0;
+}
+
+.programming-image{
+  background-image: url("images/programming1.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.contact h1 {
+  padding: 5px 0;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+
+.form-row {
+  margin: 40px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+/* TEXTAREA STYLES */
+.form-row textarea {
+  font-size: 14px;
+
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+}
+
+.form-row .instructions {
+  color: #BFC0C0;
+  font-size: 14px;
+}
+
+.form-row button {
+  background-color: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+.footer{
+  height: auto;
+  background-color: #252422;
+
+}
+
+.footer-container{
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright,
+.social {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.instagram,
+.facebook,
+.twitter,
+.github {
+  margin-left: 10px;
+}
+
+
+/* -------------------------- LAYOUT -------------------------- */
+
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
+
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 960px) {
+
+  .header{
+    background-color: #252422;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .info {
+    font-size: 1.2em;
+  }
+  .info-name{
+    margin-bottom: 15px;
+  }
+
+
+  /* .profile, */
+  .experience-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .profile-pick {
+    -moz-transform:scale(0.5);
+  -webkit-transform:scale(0.5);
+  transform:scale(0.5);
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
+  .header{
+    height: 800px;
+    background-color: #252422;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .image-header{
+    background-image: url("images/profilepickDarkBGT.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .info {
+    font-size: 1.8em;
+  }
+
+  .info-name{
+    margin-bottom: 30px;
+  }
+
+  .profile,
+  .experience-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .profile-description{
+    margin-right: 10px;
+  }
+
+  .about-me,
+  .skill,
+  .speaker-form,
+  .experience {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-two-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .row-long {
+    width: 100%
+  }
+
+}
