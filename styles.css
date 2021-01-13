@@ -262,6 +262,31 @@ a:hover {
   list-style: none;
 }
 
+/* ---------------- CURRICULUM ---------------- */
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-cv {
+  border: 5px solid #252422;
+  border-radius: 15px;
+  color: #5e5e5e;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.update-cv {
+  color: #5e5e5e;
+  font-size: 12px;
+  text-align: center;
+}
+
 /* ---------------- CONTACT US ---------------- */
 .contact {
   height: auto;
