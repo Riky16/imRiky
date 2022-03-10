@@ -1,0 +1,121 @@
+/* COLORS:
+
+BLACK:      #252422
+GREY:       #BFC0C0
+            #5e5e5e  - For description
+ORANGE:     #EB5E28
+
+ */
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* This will only work in Firefox */
+em,
+strong,
+b {
+  font-synthesis: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.8em;
+  color: #bfc0c0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  color: #eb5e28;
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+
+.wip {
+  color: #252422;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  position: relative;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  background-color: #252422;
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright,
+.social {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.instagram,
+.facebook,
+.twitter,
+.github {
+  margin-left: 10px;
+}
+
+.alert {
+  margin: 0 40px;
+}
+
+/* -------------------------- LAYOUT -------------------------- */
+
+/* Mobile Styles */
+@media only screen and (max-width: 425px) {
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 426px) and (max-width: 960px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+}
