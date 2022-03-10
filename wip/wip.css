@@ -9,14 +9,14 @@ ORANGE:     #EB5E28
 
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-Regular.woff") format("woff");
+  src: url("fonts/Rubik-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-Bold.woff") format("woff");
+  src: url("fonts/Rubik-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
