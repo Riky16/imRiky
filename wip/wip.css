@@ -119,3 +119,31 @@ a:hover {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 }
+
+/* ---------------- CURRICULUM ---------------- */
+.curriculum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 60%;
+  position: relative;
+}
+
+.btn-cv {
+
+  border: 5px solid #252422;
+  border-radius: 15px;
+  color: #5e5e5e;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.update-cv {
+  color: #5e5e5e;
+  font-size: 12px;
+  text-align: center;
+}
